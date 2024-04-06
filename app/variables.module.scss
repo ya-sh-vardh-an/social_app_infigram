@@ -1,0 +1,7 @@
+$primary-color: #64ff00;
+$bubble-d: 4.5rem;
+$bubble-r: .5*$bubble-d;
+
+:export {
+  primaryColor: $primary-color;
+}

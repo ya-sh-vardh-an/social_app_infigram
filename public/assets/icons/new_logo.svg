@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="144mm"
+   height="34mm"
+   viewBox="0 0 144 34"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="new_logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#151515"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.4324916"
+     inkscape:cx="154.62569"
+     inkscape:cy="55.497708"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       id="g1038"
+       transform="matrix(1.2627747,0,0,1.2714798,-2.1514549,-4.7061148)">
+      <ellipse
+         style="fill:#1aa0ff;fill-opacity:1;stroke-width:0.264583"
+         id="path222"
+         cx="-20.237503"
+         cy="-0.53541231"
+         rx="11.087761"
+         ry="5.0126152"
+         transform="rotate(-127)" />
+      <ellipse
+         style="fill:#df9022;fill-opacity:1;stroke-width:0.264583"
+         id="path334"
+         transform="rotate(30.3)"
+         ry="5.2639313"
+         rx="2.6616874"
+         cy="6.6357307"
+         cx="30.459307" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;white-space:pre;inline-size:89.8801;fill:#202020;fill-opacity:1;stroke-width:0.264583;stroke-dasharray:none"
+       x="41.793179"
+       y="16.978477"
+       id="text1571"
+       transform="matrix(1.2735623,0,0,1.3538391,-18.360033,4.8107456)"><tspan
+         x="41.793179"
+         y="16.978477"
+         id="tspan5324"><tspan
+           style="font-style:italic;font-weight:bold;font-size:25.4px;font-family:'Tw Cen MT';-inkscape-font-specification:'Tw Cen MT, Bold Italic';fill:#ffffff"
+           id="tspan5322">InfiGram</tspan></tspan></text>
+  </g>
+</svg>

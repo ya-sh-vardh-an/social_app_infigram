@@ -1,0 +1,131 @@
+$bubble-d: 4.5rem; // bubble diameter
+$bubble-r: .5 * $bubble-d; // bubble-radius
+$particle-d: 0.575rem;
+$particle-r: 0.5 * $particle-d;
+
+@mixin particles($k) {
+  $shadow-list: (); // init shadow list
+  $n-groups: 7; // number of groups
+  $group-base-angle: 360deg/$n-groups;
+  $group-distr-r: (1 + $k * 0.25) *$bubble-r; // circular distribution radius for groups
+  $spread-r: -$k * $particle-r;
+  $n-particles: 2;
+  $particle-base-angle: 360deg/$n-particles;
+  $particle-off-angle: 60deg;
+  
+  @for $i from 0 to $n-groups {
+    // current group angle, starting from 12 o'clock
+    $group-curr-angle: $i*$group-base-angle - 90deg;
+    // coords of the central point of current group of particles
+    $xg: $group-distr-r*cos($group-curr-angle);
+    $yg: $group-distr-r*sin($group-curr-angle);
+  
+    @for $j from 0 to $n-particles {
+      $particle-curr-angle: $group-curr-angle + $particle-off-angle + $j*$particle-base-angle;
+      // coordinates of current particle
+      $xs: $xg + $particle-d*cos($particle-curr-angle);
+      $ys: $yg + $particle-d*sin($particle-curr-angle);
+  
+      // add to shadow list
+      $shadow-list: $shadow-list, $xs $ys 0 $spread-r hsl((random(180) + random(180)) * $group-base-angle, 100%, 75%);
+    }
+    // add to shadow list
+    // $shadow-list: $shadow-list, $xg $yg;
+  }
+
+  box-shadow: $shadow-list;
+}
+
+@mixin bubble($ext) {
+  border-color: #cc8ef5;
+  border-width: $ext;
+  transform: scale(1);
+}
+
+@keyframes particles {
+  0%, 20% { opacity: 0;}
+  25% {
+    opacity: 1;
+    @include particles(0);
+  }
+}
+
+@keyframes hearts { 
+  0%, 17.5% { 
+    transform: scale(0); 
+  } 
+}
+
+@keyframes bubble {
+  15% { @include bubble($bubble-r); }
+  30%, 100% { @include bubble(0); } 
+}
+
+// @keyframes bubble {
+//   15% {
+//     border-color: #cc8ef5;
+//     border-width: $bubble-r;
+//     transform: scale(1);
+//   }
+//   30%, 100% {
+//     border-color: #cc8ef5;
+//     border-width: 0;
+//     transform: scale(1);
+//   }
+// }
+
+.toggle-hearts {
+  cursor: pointer;
+  font-size: 2em;
+  color: #e2264d;
+  will-change: transform;
+  animation: hearts 1s cubic-bezier(.17, .89, .32, 1.49);
+
+  &:before, &:after {
+    animation: inherit;
+    animation-timing-function: cubic-bezier(.21, .61, .35, 1);
+  }
+
+  &:before {
+    will-change: transform, border-width, border-color;
+    animation-name: bubble;
+    animation-duration: 2s;
+  }
+
+  &:after {
+    will-change: opacity, box-shadow;
+    animation-name: particles;
+    animation-duration: 1.2s;
+    // opacity: 0;
+  }
+}
+
+.toggle-hearts {
+  font-size: 2em;
+
+  &:before, &:after {
+    position: absolute;
+    z-index: -1;
+    top: 45%;
+    left: 50%;
+    border-radius: 50%;
+    content: '';
+    color: #cc8ef5;
+  }
+  
+  &:before {
+    box-sizing: border-box;
+    margin: -$bubble-r;
+    border: solid $bubble-r #e2264d;
+    width: $bubble-d;
+    height: $bubble-d;
+    transform: scale(0);
+  }
+
+  &:after {
+    margin: -$particle-r;
+    width: $particle-d;
+    height: $particle-d;
+    @include particles(1);
+  }
+}
