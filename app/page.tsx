@@ -3,7 +3,7 @@
 import { useUserContext } from './__context__/AuthContext';
 import { useRouter } from 'next/navigation';
 import HomePosts from '@/components/HomePosts';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 export default function Home() {
 
