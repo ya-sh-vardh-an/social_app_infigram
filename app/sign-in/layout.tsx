@@ -22,10 +22,10 @@ const SinginLayout = ({ children }: { children: React.ReactNode }) => {
             </section>
 
             <Image
-              src='/assets/images/side-img.svg'
+              src='/assets/images/aiNeonbg.png'
               alt='logo'
-              className='xl:black w-1/2 object-cover lg:h-screen bg-no-repeat max-md:hidden'
-              width={20}
+              className='relative xl:black w-1/2 object-cover max-md:hidden'
+              width={400}
               height={0}
             />
           </div>

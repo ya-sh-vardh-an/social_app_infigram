@@ -67,12 +67,12 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     // console.log('cookie', localStorage.getItem('cookieFallback'))
     if (localStorage.getItem('cookieFallback') === '[]' || localStorage.getItem('cookieFallback') === null) {
-      console.log('hello');
+      // console.log('hello');
       router.push('/sign-in');
     }
 
     checkAuthUser();
-    router.push('/');
+    // router.push('/');
 
   }, [router]);
   const value = {

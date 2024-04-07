@@ -15,10 +15,14 @@ const ShowNavigation = () => {
   }
   return (
     <>
-      <Topbar />
-      <LeftSideBar />
-      <RightSidebar />
-      <Bottombar />
+      {!condition &&
+        <>
+          <Topbar />
+          <LeftSideBar />
+          <RightSidebar />
+          <Bottombar />
+        </>
+      }
     </>
   )
 }

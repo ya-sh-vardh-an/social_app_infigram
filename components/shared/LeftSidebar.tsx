@@ -26,8 +26,8 @@ const LeftSideBar = () => {
   }, [isSuccess, router])
 
   return (
-    <nav className={`leftsidebar sticky top-0 min-h-screen h-[300px]`}>
-      <div className='sticky flex flex-col gap-11'>
+    <nav className={`leftsidebar`}>
+      <div className='flex flex-col gap-11'>
         <Link href='/' rel="prefetch" className='flex gap-1 items-center'>
           <Image
             src='/assets/icons/new_logo.svg'
