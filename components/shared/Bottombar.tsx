@@ -11,10 +11,10 @@ import { INavLink } from '@/types';
 
 const Bottombar = () => {
   const pathname = usePathname();
-  const condition = GetCondition();
+  // const condition = GetCondition();
 
   return (
-    <section className={`bottom-bar m-0 p-0 max-w-[482px] blue-glassmorphism ${condition && 'hidden'}`}>
+    <section className={`bottom-bar mx-auto p-0 max-w-[500px] blue-glassmorphism`}>
       { sidebarLinks.map((link: INavLink, idx: number) => {
         const isActive = pathname === link.route
         return (

@@ -21,6 +21,7 @@ module.exports = {
     backgroundSize: {
       '0%': '0% 0%',
       '100%': '100% 100%',
+      '100': '100px 80px',
     },
     extend: {
       transitionProperty: {
