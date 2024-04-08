@@ -384,7 +384,7 @@
 
   /* Left sidebar */
   .leftsidebar {
-    @apply hidden md:flex px-6 py-10 flex-col min-w-[270px] bg-[#0f0e0e];
+    @apply fixed px-6 py-10 mr-20 top-0 bottom-0 overflow-y-scroll custom-scrollbar max-h-[700px] w-[270px] bg-[#0f0e0e];
   }
 
   .leftsidebar-link {
@@ -402,7 +402,7 @@
 
   /* Right Sidebar */
   .rightsidebar {
-    @apply hidden min-[1215px]:flex fixed z-50 top-0 right-0 px-3 py-5 max-md:hidden flex-col min-w-[150px] w-[100px] bg-[#0f0e0e] min-h-screen h-[300px];
+    @apply min-[1215px]:sticky z-50 top-0 left-full right-0 px-3 py-5 max-md:hidden min-w-[150px] w-[100px] bg-[#0f0e0e] min-h-screen h-[300px] overflow-y-auto custom-scrollbar;
   }
 
   /* Topbar */

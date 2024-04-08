@@ -6,9 +6,9 @@ import './globals.css'
 import { Toaster } from '@/components/ui/toaster'
 import AuthProvider from './__context__/AuthContext'
 import { QueryProvider } from '@/lib/react-query/QueryProvider'
-import Bottombar from '@/components/shared/Bottombar'
+// import Bottombar from '@/components/shared/Bottombar'
 import ShowNavigation from '@/components/shared/ShowNavigation'
-import RightSidebar from '@/components/shared/RightSidebar'
+// import RightSidebar from '@/components/shared/RightSidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <AuthProvider>
             <div className="w-full h-full min-h-screen md:flex max-md:flex max-md:flex-col max-md:items-center opacity-100">
               <ShowNavigation />
-              <section className="flex flex-1 h-full min-h-screen w-full items-center justify-center min-[1215px]:mr-36">
+              <section className="flex flex-1 h-full min-h-screen w-full items-center justify-center">
                 {children}
               </section>
               {/* <RightSidebar /> */}
