@@ -29,7 +29,7 @@ const Explore = () => {
 
   if (!posts) {
     return (
-      <div className='flex-center m-4 flex-col w-full h-full gap-4'>
+      <div className='flex-center m-4 flex-col w-full h-full gap-4 min-[1215px]:mx-[200px] min-[1215px]:ml-[300px]'>
         <h2 className='h3-bold md:h2-bold w-full'>Search Posts</h2>
         <GridPostLoader />
       </div>
