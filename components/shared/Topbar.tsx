@@ -23,14 +23,14 @@ const Topbar = () => {
   }, [isSuccess, router])
 
   return (
-    <section className={`topbar blue-glassmorphism`}>
-      <div className='flex-between py-4 px-5'>
+    <section className={`topbar blue-glassmorphism border-4 border-red-600`}>
+      <div className='flex-between py-4 px-5 w-full'>
         <Link href='/' className='flex gap-1 items-center'>
           <Image
             src='/assets/icons/new_logo.svg'
             alt='logo'
-            width={140}
-            height={140}
+            width={120}
+            height={120}
             priority
           />
         </Link>

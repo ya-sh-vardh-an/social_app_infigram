@@ -24,12 +24,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <title>Infi-gram</title>
       </head>
-      <body className={`${inter.className} bg-[#000] w-full text-white win-custom-scrollbar bg_img select-none bg-10`}>
+      <body className={`${inter.className} bg-[#000] w-full text-white win-custom-scrollbar bg_img select-none bg-100`}>
         <QueryProvider>
           <AuthProvider>
-            <div className="w-full h-full min-h-screen md:flex max-md:flex max-md:flex-col max-md:items-center opacity-100">
+            <div className="w-full h-full min-h-screen md:flex max-md:flex max-md:flex-col max-md:items-center">
               <ShowNavigation />
-              <section className="flex flex-1 h-full min-h-screen w-full items-center justify-center">
+              <section className="flex flex-1 min-w-[270px] h-full min-h-screen w-full items-center justify-center max-[967px]:my-10 mx-auto min-[967px]:max-[1215px]:ml-60">
                 {children}
               </section>
               {/* <RightSidebar /> */}

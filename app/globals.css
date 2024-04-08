@@ -353,7 +353,7 @@
 
   /* Bottom bar */
   .bottom-bar {
-    @apply z-50 flex-between w-full fixed bottom-0 rounded-t-[20px] bg-[#090909] px-5 py-4 md:hidden;
+    @apply z-50 flex-between w-full fixed left-0 right-0 bottom-0 rounded-t-[20px] bg-[#090909] px-5 py-4 min-[967px]:hidden;
   }
 
   /* File uploader */
@@ -384,7 +384,7 @@
 
   /* Left sidebar */
   .leftsidebar {
-    @apply fixed px-6 py-10 mr-20 top-0 bottom-0 overflow-y-scroll custom-scrollbar max-h-[700px] w-[270px] bg-[#0f0e0e];
+    @apply hidden fixed min-[967px]:flex flex-col px-6 py-10 mr-20 top-0 bottom-0 overflow-y-scroll custom-scrollbar max-h-[750px] w-[270px] bg-[#0f0e0e];
   }
 
   .leftsidebar-link {
@@ -402,12 +402,12 @@
 
   /* Right Sidebar */
   .rightsidebar {
-    @apply min-[1215px]:sticky z-50 top-0 left-full right-0 px-3 py-5 max-md:hidden min-w-[150px] w-[100px] bg-[#0f0e0e] min-h-screen h-[300px] overflow-y-auto custom-scrollbar;
+    @apply hidden min-[1215px]:flex flex-col min-[1215px]:fixed z-50 top-0 right-0 px-3 py-5 w-[150px] bg-[#0f0e0e] min-h-screen h-[300px] overflow-y-auto custom-scrollbar;
   }
 
   /* Topbar */
   .topbar {
-    @apply sticky top-0 z-50 md:hidden bg-[#090909] w-full;
+    @apply fixed top-0 z-50 min-[967px]:hidden w-full;
   }
 
   /* User card */
