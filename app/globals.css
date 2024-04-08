@@ -283,7 +283,7 @@
   /* Explore */
   /* custom-scrollbar */
   .explore-container {
-    @apply flex flex-col flex-1 items-center py-10 px-5 md:p-14;
+    @apply flex flex-col flex-1 items-center py-10 px-5 min-[1215px]:mx-[200px] min-[1215px]:ml-[240px] md:p-14;
   }
 
   .explore-inner_container {
